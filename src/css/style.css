@@ -1,0 +1,519 @@
+header {
+    font-family: Arial;
+}
+
+nav {
+    width: 100%;
+    height: 60px;
+    background-color: #344051;
+    color: white;
+    float: left;
+}
+
+.owner {
+    color: white;
+    font-size: 28px;
+    line-height: 60px;
+    padding-left: 388px;
+    padding-right: 430px;
+    float: left;
+}
+
+.menu {
+    font-size: 16px;
+    float: left;
+}
+
+ul li {
+    float: left;
+    padding-right: 40px;
+    line-height: 60px;
+    text-transform: uppercase;
+}
+
+.main {
+    width: 100%;
+    height: calc(100% - 60px);
+    background: url(../img/тень.png) 0 100%/auto no-repeat, url(../img/Без\ имени-1.png) 90% 80%/auto no-repeat, url(../img/bg.jpg) center/cover no-repeat;
+}
+
+.titel_container {
+    font-family: Arial, Helvetica, sans-serif;
+    float: left;
+    padding: 300px 0 0 300px;
+    color: #2c384a;
+    text-align: center;
+}
+
+.titel_container h1 {
+    font-size: 80px;
+    font-weight: bold;
+    letter-spacing: -1px;
+}
+
+.titel_container h4 {
+    font-size: 25px;
+    padding-top: 25px;
+    color: #79818d;
+}
+
+.titel_container input {
+    margin: 58px 14px 0 14px;
+    height: 40px;
+    text-align: center;
+    background: none;
+    border: 2px solid #6d7682;
+    border-radius: 10px;
+    padding: 0 16px;
+    font-size: 18px;
+    color: #6d7682;
+}
+
+.AboutMe h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 38px;
+    text-align: center;
+    color: #263244;
+    margin-top: 60px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.AboutMe img {
+    display: block;
+    margin: 20px auto 0 auto;
+}
+
+.AboutMe p {
+    margin: 50px 350px 50px 350px;
+    text-align: center;
+    font-size: 22px;
+}
+
+.AboutMe button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 80px;
+    border: 2px solid #6f707e;
+    background: none;
+    font-size: 20px;
+    width: 12%;
+    border-radius: 10px 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #6f707e;
+    height: 50px;
+}
+
+.AboutMe button img {
+    float: left;
+    margin: 5px 0 5px 25px;
+}
+
+.skills {
+    width: 100%;
+    height: 70%;
+    background: url(../img/фон\ 3\ блок.png) center/cover no-repeat;
+}
+
+.skills2 h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 38px;
+    text-align: center;
+    color: #263244;
+    padding-top: 100px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.skills2 img {
+    display: block;
+    margin: 20px auto 0 auto;
+}
+
+.object h4 {
+    color: #cc6600;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 30px 0 20px 0;
+    font-size: 23px;
+}
+
+.object1 h4 {
+    color: #cc6600;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 30px 0 20px 0;
+    font-size: 23px;
+}
+
+.object {
+    display: block;
+    float: left;
+    font-size: 18px;
+    text-align: center;
+    max-width: 230px;
+    color: #5b6370;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 150px 50px 100px 50px;
+    letter-spacing: -1px;
+}
+
+.object1 {
+    display: block;
+    float: left;
+    font-size: 18px;
+    text-align: center;
+    max-width: 240px;
+    color: #5b6370;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 150px 50px 100px 340px;
+    letter-spacing: -1px;
+}
+
+.cases h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 38px;
+    text-align: center;
+    color: #263244;
+    padding-top: 100px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#line {
+    display: block;
+    margin: 30px auto 0 auto;
+}
+
+.cases p {
+    text-align: center;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 40px 0 45px 0;
+}
+
+.subsection h4 {
+    font-size: 22px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #384354;
+    margin: 40px 0 15px 0;
+}
+
+.subsection {
+    padding-left: 388px;
+    margin-right: 70px;
+    display: block;
+    float: left;
+}
+
+.subsection span {
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #3f495a;
+}
+
+.subsection a {
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #3f495a;
+}
+
+.subsection2 {
+    max-width: 82%;
+    text-align: justify;
+}
+
+.subsection2 p {
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #3f495a;
+}
+
+.subsection2 h4 {
+    font-size: 22px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #384354;
+    margin: 40px 0 15px 0;
+}
+
+.button {
+    margin-top: 40px;
+    border: 1px solid #63b5ae;
+    border-radius: 7px;
+    background: #63b5ae;
+    height: 40px;
+    width: 200px;
+    color: white;
+    text-align: center;
+}
+
+.button button {
+    color: white;
+    background: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    padding-top: 10px;
+}
+
+.cost h2 {
+    padding-top: 270px;
+    padding-bottom: 80px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 38px;
+    font-weight: bold;
+    color: #1c2534;
+}
+
+.cost h3 {
+    text-transform: uppercase;
+    color: #1c2534;
+    font-size: 28px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 510px;
+}
+
+.cost select {
+    margin: 20px 0 50px 510px;
+    width: 890px;
+    font-size: 18px;
+    background-color: #eeeeee;
+    padding: 10px 0 10px 20px;
+}
+
+.cost img {
+    margin-left: 510px;
+    margin-top: 10px;
+}
+
+.cost p {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: #1c2534;
+    padding: 30px 0 0 510px;
+}
+
+.stats {
+    width: 100%;
+    height: 70%;
+    margin-top: 150px;
+    background: url(../img/фон\ 6\ блок.png) center/cover no-repeat;
+}
+
+.stats2 h2 {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 38px;
+    font-weight: bold;
+    color: #323e4f;
+    padding-top: 50px;
+}
+
+.stats2 img {
+    display: block;
+    margin: 25px auto 0 auto;
+}
+
+.object2 {
+    display: block;
+    float: left;
+    font-size: 25px;
+    text-align: center;
+    max-width: 240px;
+    color: #323e4f;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 180px 0 0 150px;
+    letter-spacing: -1px;
+}
+
+.object3 {
+    display: block;
+    float: left;
+    font-size: 25px;
+    text-align: center;
+    max-width: 250px;
+    color: #323e4f;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 180px 0 0 320px;
+    letter-spacing: -1px;
+}
+
+.object2 p {
+    padding-top: 40px;
+}
+
+.object3 p {
+    padding-top: 40px;
+}
+
+.object2 p strong {
+    font-weight: 900;
+}
+
+.object3 p strong {
+    font-weight: 900;
+}
+
+.reviews h2 {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 38px;
+    font-weight: bold;
+    color: #243042;
+    padding-top: 60px;
+}
+
+.reviews img {
+    display: block;
+    margin: 30px auto 20px auto;
+}
+
+#danek {
+    display: block;
+    margin: 70px auto 0 auto;
+}
+
+.reviews p {
+    text-align: center;
+    font-size: 22px;
+    color: #243042;
+    padding: 60px 0 0 0;
+    max-width: 50%;
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: -1px;
+}
+
+.reviews {
+    margin-bottom: 100px;
+}
+
+.contacts {
+    width: 100%;
+    height: 100%;
+    background: url(../img/Фон\ 8\ блок.png) center/cover no-repeat;
+}
+
+.contacts2 h2 {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 38px;
+    color: white;
+    padding-top: 90px;
+}
+
+.contacts2 img {
+    display: block;
+    margin: 30px auto;
+}
+
+.contacts2 p {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    text-align: center;
+}
+
+.object4 {
+    display: block;
+    float: left;
+    font-size: 25px;
+    text-align: center;
+    max-width: 240px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 50px 0 0 150px;
+    letter-spacing: -1px;
+}
+
+.object5 {
+    display: block;
+    float: left;
+    font-size: 25px;
+    text-align: center;
+    max-width: 240px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 50px 0 0 520px;
+    letter-spacing: -1px;
+}
+
+.object4 img {
+    margin-bottom: 30px;
+}
+
+.object5 img {
+    margin-bottom: 30px;
+}
+
+.message {
+    display: flexbox;
+    position: absolute;
+    width: 100%;
+    margin-top: 220px;
+}
+
+.message h3 {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    text-align: center;
+}
+
+#name {
+    margin-left: 520px;
+    width: 430px;
+    height: 40px;
+    margin-top: 40px;
+    padding-left: 15px;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+#name2 {
+    margin: 40px 0 30px 30px;
+    width: 430px;
+    height: 40px;
+    padding-left: 15px;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.message textarea {
+    resize: none;
+    width: 900px;
+    height: 90px;
+    background-color: rgba(255, 255, 255, 0.7);
+    margin-left: 520px;
+    padding: 10px 0 0 15px;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.button2 button {
+    margin: 3% 45%;
+    border: 1px solid rgba(255, 255, 255);
+    border-radius: 7px;
+    background: none;
+    height: 50px;
+    width: 190px;
+    font-size: 20px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+footer {
+    height: 60px;
+    background-color: #354051;
+    text-align: center;
+    font-size: 18px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 20px;
+}
