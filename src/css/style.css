@@ -1,3 +1,4 @@
+
 header {
     font-family: Arial;
 }
@@ -6,8 +7,61 @@ nav {
     width: 100%;
     height: 60px;
     background-color: #344051;
-    color: white;
     float: left;
+    position: fixed;
+}
+
+nav li a {
+    transition: all 0.2s;
+    display: inline-block;
+    transform: scale(1);
+
+}
+
+nav li {
+    animation: topshift 1s ease forwards;
+    opacity: 0;
+}
+
+@keyframes topshift {
+    0% {
+        opacity: 0;
+        margin-top: -80px;
+    }
+
+    100% {
+        opacity: 1;
+        margin-top: 0px;
+    }
+}
+
+nav li:nth-child(2) {
+    animation-delay: 0.4s;
+}
+
+nav li:nth-child(3) {
+    animation-delay: 0.8s;
+}
+
+nav li:nth-child(4) {
+    animation-delay: 1.2s;
+}
+
+nav li:nth-child(5) {
+    animation-delay: 1.6s;
+}
+
+nav li:nth-child(6) {
+    animation-delay: 2s;
+}
+
+nav a:visited {
+    color: white;
+}
+
+nav a:hover {
+    color: #e88604;
+    transform: scale(1.2);
 }
 
 .owner {
@@ -17,6 +71,7 @@ nav {
     padding-left: 388px;
     padding-right: 430px;
     float: left;
+    animation: topshift 1s ease;
 }
 
 .menu {
@@ -33,22 +88,37 @@ ul li {
 
 .main {
     width: 100%;
-    height: calc(100% - 60px);
+    height: 100%;
     background: url(../img/тень.png) 0 100%/auto no-repeat, url(../img/Без\ имени-1.png) 90% 80%/auto no-repeat, url(../img/bg.jpg) center/cover no-repeat;
 }
 
 .title_container {
     font-family: Arial, Helvetica, sans-serif;
     float: left;
-    padding: 300px 0 0 300px;
+    margin: 300px 0 0 300px;
     color: #2c384a;
     text-align: center;
+    animation: titlemove 1.5s forwards;
+    animation-delay: 2s;
+    opacity: 0;
+}
+
+@keyframes titlemove {
+    0% {
+        opacity: 0;
+        margin-left: -300px;
+    }
+
+    100% {
+        opacity: 1;
+        margin-left: 300px;
+    }
 }
 
 .title_container h1 {
     font-size: 80px;
     font-weight: bold;
-    letter-spacing: -1px;
+    letter-spacing: -6px;
 }
 
 .title_container h4 {
@@ -67,6 +137,17 @@ ul li {
     padding: 0 16px;
     font-size: 18px;
     color: #6d7682;
+    transition: all 0.4s;
+}
+
+.title_container input:hover {
+    background: #344051;
+    color: white;
+    transform: scale(1);
+}
+
+.title_container input:active {
+    transform: scale(1.2);
 }
 
 .AboutMe h2 {
@@ -103,6 +184,13 @@ ul li {
     font-family: Arial, Helvetica, sans-serif;
     color: #6f707e;
     height: 50px;
+    transition: all 0.5s;
+    transform: scale(1);
+}
+
+.AboutMe button:hover {
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 30px #6f707e) drop-shadow(0 0 70px #6f707e);
 }
 
 .AboutMe button img {
@@ -112,8 +200,9 @@ ul li {
 
 .skills {
     width: 100%;
-    height: 70%;
+    height: 65%;
     background: url(../img/фон\ 3\ блок.png) center/cover no-repeat;
+    background-attachment: fixed;
 }
 
 .skills2 h2 {
@@ -155,6 +244,12 @@ ul li {
     font-family: Arial, Helvetica, sans-serif;
     margin: 150px 50px 100px 50px;
     letter-spacing: -1px;
+    transition: all 0.2s;
+    transform: scale(1);
+}
+
+.object:hover {
+    transform: scale(1.2);
 }
 
 .object1 {
@@ -167,6 +262,12 @@ ul li {
     font-family: Arial, Helvetica, sans-serif;
     margin: 150px 50px 100px 340px;
     letter-spacing: -1px;
+    transition: all 0.2s;
+    transform: scale(1);
+}
+
+.object1:hover {
+    transform: scale(1.2);
 }
 
 .cases h2 {
@@ -237,7 +338,7 @@ ul li {
     margin: 40px 0 15px 0;
 }
 
-.button {
+.visit {
     margin-top: 40px;
     border: 1px solid #63b5ae;
     border-radius: 7px;
@@ -246,9 +347,19 @@ ul li {
     width: 200px;
     color: white;
     text-align: center;
+    transition: all 0.2s;
+    transform: scale(1);
 }
 
-.button button {
+.visit:hover {
+    background: #00675C;
+}
+
+.visit:active {
+    transform: scale(1.1);
+}
+
+.visit button {
     color: white;
     background: none;
     font-family: Arial, Helvetica, sans-serif;
@@ -289,19 +400,45 @@ ul li {
 }
 
 .cost p {
+    display: block;
     text-transform: uppercase;
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
     color: #1c2534;
     padding: 30px 0 0 510px;
+    float: left;
+}
+
+#term {
+    display: block;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: #1c2534;
+    padding: 30px 200px 0 810px;
+    float: left;
+}
+
+#cost {
+    display: block;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: #1c2534;
+    padding: 30px 0 0 758px;
+    float: left;
 }
 
 .stats {
     width: 100%;
-    height: 70%;
+    height: 65%;
     margin-top: 150px;
     background: url(../img/фон\ 6\ блок.png) center/cover no-repeat;
+    background-attachment: fixed;
+
 }
 
 .stats2 h2 {
@@ -328,6 +465,8 @@ ul li {
     font-family: Arial, Helvetica, sans-serif;
     margin: 180px 0 0 150px;
     letter-spacing: -1px;
+    transition: all 0.2s;
+    transform: scale(1);
 }
 
 .object3 {
@@ -340,6 +479,16 @@ ul li {
     font-family: Arial, Helvetica, sans-serif;
     margin: 180px 0 0 320px;
     letter-spacing: -1px;
+    transition: all 0.2s;
+    transform: scale(1);
+}
+
+.object2:hover {
+    transform: scale(1.2);
+}
+
+.object3:hover {
+    transform: scale(1.2);
 }
 
 .object2 p {
@@ -497,7 +646,7 @@ ul li {
 }
 
 .button2 button {
-    margin: 3% 45%;
+    margin: 1% 45%;
     border: 1px solid rgba(255, 255, 255);
     border-radius: 7px;
     background: none;
@@ -506,6 +655,11 @@ ul li {
     font-size: 20px;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
+    transition: all 0.2s;
+    transform: scale(1);
+}
+.button2 button:hover{
+    transform: scale(1.1);
 }
 
 footer {
@@ -517,3 +671,40 @@ footer {
     font-family: Arial, Helvetica, sans-serif;
     padding-top: 20px;
 }
+.preloader{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(50, 50, 50);;
+    z-index: 1001;
+}
+
+.wrapper{
+    width: 100px;
+    height: 100px;
+    border: 12px solid #ccc;
+    border-radius: 160px;
+    border-top: 12px solid #e88604;
+    animation: preloaderAnimation 0.5s linear 3;
+}
+@keyframes preloaderAnimation{
+    0%
+    {
+        transform: rotate(0deg);
+    }
+    100%
+    {
+        transform: rotate(360deg);
+    }
+}
+.loaded_hiding .preloader {
+    transition: 0.2s opacity;
+    opacity: 0;
+  }
+  
+  .loaded .preloader {
+    display: none;
+  }
