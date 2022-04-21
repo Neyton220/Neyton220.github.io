@@ -1,6 +1,5 @@
-
 header {
-    font-family: Arial;
+    font-family: 'Open Sans', sans-serif;
 }
 
 nav {
@@ -9,12 +8,14 @@ nav {
     background-color: #344051;
     float: left;
     position: fixed;
+    z-index: 1001;
 }
 
 nav li a {
     transition: all 0.2s;
     display: inline-block;
     transform: scale(1);
+    text-decoration: none;
 
 }
 
@@ -66,16 +67,14 @@ nav a:hover {
 
 .owner {
     color: white;
-    font-size: 28px;
+    font-size: 21px;
     line-height: 60px;
-    padding-left: 388px;
-    padding-right: 430px;
     float: left;
     animation: topshift 1s ease;
 }
 
 .menu {
-    font-size: 16px;
+    font-size: 14px;
     float: left;
 }
 
@@ -93,11 +92,11 @@ ul li {
 }
 
 .title_container {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     float: left;
-    margin: 300px 0 0 300px;
     color: #2c384a;
     text-align: center;
+    width: 100%;
     animation: titlemove 1.5s forwards;
     animation-delay: 2s;
     opacity: 0;
@@ -111,13 +110,40 @@ ul li {
 
     100% {
         opacity: 1;
-        margin-left: 300px;
+        margin-left: 0px;
+    }
+}
+
+@media(max-width: 991px) {
+    .title_container {
+        color: white;
+        position: relative;
+        z-index: 3;
+    }
+
+    .title_container h4 {
+        color: white;
+        position: relative;
+        z-index: 3;
+    }
+
+    .main {
+        position: relative;
+    }
+
+    .main::after {
+        content: "";
+        bottom: 0;
+        top: 0;
+        left: 0;
+        right: 0;
+        position: absolute;
+        background: rgba(0, 0, 0, 0.8);
     }
 }
 
 .title_container h1 {
     font-size: 80px;
-    font-weight: bold;
     letter-spacing: -6px;
 }
 
@@ -125,6 +151,16 @@ ul li {
     font-size: 25px;
     padding-top: 25px;
     color: #79818d;
+}
+
+.title_container i {
+    font-size: 40px;
+    padding-right: 10px;
+    color: red;
+}
+
+#css3 {
+    color: blue;
 }
 
 .title_container input {
@@ -151,7 +187,7 @@ ul li {
 }
 
 .AboutMe h2 {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 38px;
     text-align: center;
     color: #263244;
@@ -166,31 +202,39 @@ ul li {
 }
 
 .AboutMe p {
-    margin: 50px 350px 50px 350px;
+    margin: 50px 0 50px 0;
     text-align: center;
     font-size: 22px;
 }
 
 .AboutMe button {
-    display: block;
+    display: flex;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 80px;
     border: 2px solid #6f707e;
     background: none;
     font-size: 20px;
-    width: 12%;
+    width: 20%;
     border-radius: 10px 10px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     color: #6f707e;
     height: 50px;
     transition: all 0.5s;
     transform: scale(1);
+    align-items: center;
+    padding-left: 15px;
+}
+
+@media (max-width: 1400px) {
+    .AboutMe button {
+        min-width: 250px;
+    }
 }
 
 .AboutMe button:hover {
     transform: scale(1.1);
-    filter: drop-shadow(0 0 30px #6f707e) drop-shadow(0 0 70px #6f707e);
+    filter: drop-shadow(0 0 10px #000000) drop-shadow(0 0 40px #000000);
 }
 
 .AboutMe button img {
@@ -206,11 +250,11 @@ ul li {
 }
 
 .skills2 h2 {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 38px;
     text-align: center;
     color: #263244;
-    padding-top: 100px;
+    padding-top: 80px;
     text-transform: uppercase;
     font-weight: bold;
 }
@@ -222,28 +266,28 @@ ul li {
 
 .object h4 {
     color: #cc6600;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     padding: 30px 0 20px 0;
     font-size: 23px;
 }
 
 .object1 h4 {
     color: #cc6600;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     padding: 30px 0 20px 0;
     font-size: 23px;
 }
 
 .object {
     display: block;
-    float: left;
     font-size: 18px;
     text-align: center;
-    max-width: 230px;
+    padding-left: 40px;
+    padding-top: 80px;
     color: #5b6370;
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 150px 50px 100px 50px;
+    font-family: 'Open Sans', sans-serif;
     letter-spacing: -1px;
+    align-items: center;
     transition: all 0.2s;
     transform: scale(1);
 }
@@ -254,16 +298,48 @@ ul li {
 
 .object1 {
     display: block;
-    float: left;
+    padding-left: 40px;
+    padding-top: 80px;
     font-size: 18px;
     text-align: center;
-    max-width: 240px;
     color: #5b6370;
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 150px 50px 100px 340px;
+    font-family: 'Open Sans', sans-serif;
     letter-spacing: -1px;
+    align-items: center;
     transition: all 0.2s;
     transform: scale(1);
+}
+
+@media(max-width: 1170px) {
+    .object {
+        padding-top: 50px;
+        padding-left: 0;
+        margin-left: 30px;
+    }
+
+    .object1 {
+        padding-top: 50px;
+        padding-left: 0;
+        margin-left: 30px;
+    }
+
+    .object p {
+        opacity: 0;
+    }
+
+    .object1 p {
+        opacity: 0;
+    }
+}
+
+@media(max-width: 775px){
+    .object h4{ 
+        font-size: 18px;
+    }
+
+    .object1 h4{ 
+        font-size: 18px;
+    }
 }
 
 .object1:hover {
@@ -271,7 +347,7 @@ ul li {
 }
 
 .cases h2 {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 38px;
     text-align: center;
     color: #263244;
@@ -287,63 +363,60 @@ ul li {
 
 .cases p {
     text-align: center;
-    font-size: 16px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    font-family: 'Open Sans', sans-serif;
     margin: 40px 0 45px 0;
 }
 
 .subsection h4 {
     font-size: 22px;
     font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     color: #384354;
     margin: 40px 0 15px 0;
 }
 
 .subsection {
-    padding-left: 388px;
-    margin-right: 70px;
     display: block;
     float: left;
 }
 
 .subsection span {
     font-size: 18px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     color: #3f495a;
 }
 
 .subsection a {
     font-size: 18px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     color: #3f495a;
-}
-
-.subsection2 {
-    max-width: 82%;
-    text-align: justify;
+    text-decoration: none;
 }
 
 .subsection2 p {
     font-size: 18px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     color: #3f495a;
+    letter-spacing: -1px;
+    text-align: start;
 }
 
 .subsection2 h4 {
     font-size: 22px;
     font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     color: #384354;
     margin: 40px 0 15px 0;
 }
 
 .visit {
     margin-top: 40px;
+    margin-bottom: 200px;
     border: 1px solid #63b5ae;
     border-radius: 7px;
     background: #63b5ae;
-    height: 40px;
+    height: 45px;
     width: 200px;
     color: white;
     text-align: center;
@@ -362,16 +435,21 @@ ul li {
 .visit button {
     color: white;
     background: none;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 18px;
     padding-top: 10px;
 }
 
+.cost .container {
+    border: 1px solid rgba(0, 0, 0, 0);
+    box-shadow: 0px 0px 60px 10px rgba(0, 0, 0, 0.6);
+}
+
 .cost h2 {
-    padding-top: 270px;
     padding-bottom: 80px;
+    padding-top: 40px;
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 38px;
     font-weight: bold;
     color: #1c2534;
@@ -382,54 +460,73 @@ ul li {
     color: #1c2534;
     font-size: 28px;
     font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-left: 510px;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .cost select {
-    margin: 20px 0 50px 510px;
-    width: 890px;
+    margin: 20px 0 50px 0px;
+    width: 82%;
     font-size: 18px;
     background-color: #eeeeee;
     padding: 10px 0 10px 20px;
 }
 
 .cost img {
-    margin-left: 510px;
     margin-top: 10px;
+    width: 82%;
 }
 
 .cost p {
     display: block;
     text-transform: uppercase;
     font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 18px;
     color: #1c2534;
-    padding: 30px 0 0 510px;
-    float: left;
+    padding-top: 30px;
 }
 
 #term {
     display: block;
     text-transform: uppercase;
     font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 18px;
     color: #1c2534;
-    padding: 30px 200px 0 810px;
-    float: left;
+    padding-top: 30px;
 }
 
 #cost {
     display: block;
     text-transform: uppercase;
     font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 18px;
     color: #1c2534;
-    padding: 30px 0 0 758px;
-    float: left;
+    padding-top: 30p;
+}
+
+.cost button {
+    font-size: 19px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border: 1px solid #63b5ae;
+    border-radius: 7px;
+    background: #63b5ae;
+    height: 45px;
+    width: 200px;
+    color: white;
+    text-align: center;
+    transition: all 0.2s;
+    transform: scale(1);
+}
+
+.cost button:hover {
+    background: #00675C;
+}
+
+.cost button:active {
+    transform: scale(1.1);
 }
 
 .stats {
@@ -443,7 +540,7 @@ ul li {
 
 .stats2 h2 {
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 38px;
     font-weight: bold;
     color: #323e4f;
@@ -457,13 +554,12 @@ ul li {
 
 .object2 {
     display: block;
-    float: left;
     font-size: 25px;
     text-align: center;
     max-width: 240px;
     color: #323e4f;
     font-family: Arial, Helvetica, sans-serif;
-    margin: 180px 0 0 150px;
+    margin-top: 160px;
     letter-spacing: -1px;
     transition: all 0.2s;
     transform: scale(1);
@@ -471,16 +567,63 @@ ul li {
 
 .object3 {
     display: block;
-    float: left;
     font-size: 25px;
     text-align: center;
     max-width: 250px;
     color: #323e4f;
     font-family: Arial, Helvetica, sans-serif;
-    margin: 180px 0 0 320px;
+    margin-top: 160px;
     letter-spacing: -1px;
     transition: all 0.2s;
     transform: scale(1);
+}
+
+@media(max-height:900px) {
+    .object2 {
+        margin-top: 50px;
+    }
+
+    .object3 {
+        margin-top: 50px;
+    }
+}
+
+@media(max-height:780px) {
+    .object2 p {
+        opacity: 0;
+    }
+
+    .object3 p {
+        opacity: 0;
+    }
+
+    .object3:hover::after {
+        content: attr(data-title);
+        position: absolute;
+        left: 20%;
+        top: 40%;
+        z-index: 1;
+        background: rgba(255, 170, 24, 0.6);
+        font-family: Arial, sans-serif;
+        font-size: 11px;
+        padding: 5px 10px;
+        border: 1px solid rgba(0, 0, 0, 0);
+        border-radius: 20px;
+    }
+
+    .object2:hover::after {
+        content: attr(data-title);
+        position: absolute;
+        left: 20%;
+        top: 40%;
+        z-index: 1;
+        background: rgba(255, 170, 24, 0.6);
+        font-family: Arial, sans-serif;
+        font-size: 11px;
+        padding: 5px 10px;
+        border: 1px solid rgba(0, 0, 0, 0);
+        border-radius: 20px;
+    }
 }
 
 .object2:hover {
@@ -499,17 +642,9 @@ ul li {
     padding-top: 40px;
 }
 
-.object2 p strong {
-    font-weight: 900;
-}
-
-.object3 p strong {
-    font-weight: 900;
-}
-
 .reviews h2 {
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 38px;
     font-weight: bold;
     color: #243042;
@@ -533,7 +668,7 @@ ul li {
     padding: 60px 0 0 0;
     max-width: 50%;
     margin: 0 auto;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     letter-spacing: -1px;
 }
 
@@ -549,10 +684,10 @@ ul li {
 
 .contacts2 h2 {
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 38px;
     color: white;
-    padding-top: 90px;
+    padding-top: 40px;
 }
 
 .contacts2 img {
@@ -560,35 +695,42 @@ ul li {
     margin: 30px auto;
 }
 
-.contacts2 p {
+.description p {
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 22px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
     text-align: center;
 }
 
 .object4 {
     display: block;
-    float: left;
-    font-size: 25px;
+    font-size: 20px;
     text-align: center;
     max-width: 240px;
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 50px 0 0 150px;
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 50px;
     letter-spacing: -1px;
 }
 
 .object5 {
     display: block;
-    float: left;
-    font-size: 25px;
+    font-size: 22px;
     text-align: center;
     max-width: 240px;
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 50px 0 0 520px;
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 50px;
     letter-spacing: -1px;
+}
+
+@media(max-width:1200px){
+    .object4{
+        font-size: 16px;
+    }
+    .object5{
+        font-size: 16px;
+    }
 }
 
 .object4 img {
@@ -600,65 +742,67 @@ ul li {
 }
 
 .message {
-    display: flexbox;
-    position: absolute;
+    display: block;
     width: 100%;
-    margin-top: 220px;
+    margin-top: 20px;
 }
 
 .message h3 {
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 22px;
     text-align: center;
 }
 
 #name {
-    margin-left: 520px;
-    width: 430px;
+    display: inline-block;
+    width: 100%;
     height: 40px;
     margin-top: 40px;
+    margin-bottom: 40px;
     padding-left: 15px;
     font-size: 18px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     background-color: rgba(255, 255, 255, 0.7);
 }
 
 #name2 {
-    margin: 40px 0 30px 30px;
-    width: 430px;
+    display: inline-block;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 100%;
     height: 40px;
     padding-left: 15px;
     font-size: 18px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     background-color: rgba(255, 255, 255, 0.7);
 }
 
 .message textarea {
     resize: none;
-    width: 900px;
+    width: 100%;
     height: 90px;
     background-color: rgba(255, 255, 255, 0.7);
-    margin-left: 520px;
     padding: 10px 0 0 15px;
     font-size: 18px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .button2 button {
-    margin: 1% 45%;
+    margin-top: 20px;
     border: 1px solid rgba(255, 255, 255);
     border-radius: 7px;
     background: none;
     height: 50px;
-    width: 190px;
+    width: 100%;
     font-size: 20px;
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     transition: all 0.2s;
     transform: scale(1);
 }
-.button2 button:hover{
+
+.button2 button:hover {
     transform: scale(1.1);
 }
 
@@ -668,21 +812,23 @@ footer {
     text-align: center;
     font-size: 18px;
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     padding-top: 20px;
 }
-.preloader{
+
+.preloader {
     position: relative;
     width: 100%;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: rgb(50, 50, 50);;
+    background: rgb(50, 50, 50);
+    ;
     z-index: 1001;
 }
 
-.wrapper{
+.wrapper {
     width: 100px;
     height: 100px;
     border: 12px solid #ccc;
@@ -690,21 +836,26 @@ footer {
     border-top: 12px solid #e88604;
     animation: preloaderAnimation 0.5s linear 3;
 }
-@keyframes preloaderAnimation{
-    0%
-    {
+
+@keyframes preloaderAnimation {
+    0% {
         transform: rotate(0deg);
     }
-    100%
-    {
+
+    100% {
         transform: rotate(360deg);
     }
 }
+
 .loaded_hiding .preloader {
     transition: 0.2s opacity;
     opacity: 0;
-  }
-  
-  .loaded .preloader {
+}
+
+.loaded .preloader {
     display: none;
-  }
+}
+
+#map {
+    width: 99.99%;
+}
