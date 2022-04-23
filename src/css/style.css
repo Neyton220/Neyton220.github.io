@@ -19,7 +19,7 @@ nav li a {
 
 }
 
-nav li {
+nav .points {
     animation: topshift 1s ease forwards;
     opacity: 0;
 }
@@ -36,31 +36,31 @@ nav li {
     }
 }
 
-nav li:nth-child(2) {
+nav .points:nth-child(2) {
     animation-delay: 0.4s;
 }
 
-nav li:nth-child(3) {
+nav .points:nth-child(3) {
     animation-delay: 0.8s;
 }
 
-nav li:nth-child(4) {
+nav .points:nth-child(4) {
     animation-delay: 1.2s;
 }
 
-nav li:nth-child(5) {
+nav .points:nth-child(5) {
     animation-delay: 1.6s;
 }
 
-nav li:nth-child(6) {
+nav .points:nth-child(6) {
     animation-delay: 2s;
 }
 
-nav a:visited {
+nav .points a:visited {
     color: white;
 }
 
-nav a:hover {
+nav .points a:hover {
     color: #e88604;
     transform: scale(1.2);
 }
@@ -282,8 +282,7 @@ ul li {
     display: block;
     font-size: 18px;
     text-align: center;
-    padding-left: 40px;
-    padding-top: 80px;
+    margin-top: 80px;
     color: #5b6370;
     font-family: 'Open Sans', sans-serif;
     letter-spacing: -1px;
@@ -298,8 +297,7 @@ ul li {
 
 .object1 {
     display: block;
-    padding-left: 40px;
-    padding-top: 80px;
+    margin-top: 80px;
     font-size: 18px;
     text-align: center;
     color: #5b6370;
@@ -312,36 +310,55 @@ ul li {
 
 @media(max-width: 1170px) {
     .object {
-        padding-top: 50px;
+        margin-top: 50px;
         padding-left: 0;
-        margin-left: 30px;
     }
 
     .object1 {
-        padding-top: 50px;
+        margin-top: 50px;
         padding-left: 0;
-        margin-left: 30px;
+    }
+}
+
+@media(max-width: 775px) {
+    .object h4 {
+        font-size: 16px;
+    }
+
+    .object1 h4 {
+        font-size: 16px;
+    }
+
+    .object {
+        margin-top: 100px;
+        padding-left: 0;
+    }
+
+    .object1 {
+        margin-top: 100px;
+        padding-left: 0;
     }
 
     .object p {
         opacity: 0;
+        font-size: 1px;
     }
 
     .object1 p {
         opacity: 0;
+        font-size: 1px;
     }
 }
 
-@media(max-width: 775px){
-    .object h4{ 
-        font-size: 18px;
+@media(max-width: 400px) {
+    .object h4 {
+        font-size: 13px;
     }
 
-    .object1 h4{ 
-        font-size: 18px;
+    .object1 h4 {
+        font-size: 13px;
     }
 }
-
 .object1:hover {
     transform: scale(1.2);
 }
@@ -569,7 +586,6 @@ ul li {
     display: block;
     font-size: 25px;
     text-align: center;
-    max-width: 250px;
     color: #323e4f;
     font-family: Arial, Helvetica, sans-serif;
     margin-top: 160px;
@@ -580,21 +596,23 @@ ul li {
 
 @media(max-height:900px) {
     .object2 {
-        margin-top: 50px;
+        margin-top: 80px;
     }
 
     .object3 {
-        margin-top: 50px;
+        margin-top: 80px;
     }
 }
 
 @media(max-height:780px) {
     .object2 p {
         opacity: 0;
+        font-size: 1px;
     }
 
     .object3 p {
         opacity: 0;
+        font-size: 1px;
     }
 
     .object3:hover::after {
@@ -625,6 +643,47 @@ ul li {
         border-radius: 20px;
     }
 }
+
+@media(max-width:516px) {
+    .object2 p {
+        opacity: 0;
+        font-size: 1px;
+    }
+
+    .object3 p {
+        opacity: 0;
+        font-size: 1px;
+    }
+
+    .object3:hover::after {
+        content: attr(data-title);
+        position: absolute;
+        left: 20%;
+        top: 40%;
+        z-index: 1;
+        background: rgba(255, 170, 24, 0.6);
+        font-family: Arial, sans-serif;
+        font-size: 11px;
+        padding: 5px 10px;
+        border: 1px solid rgba(0, 0, 0, 0);
+        border-radius: 20px;
+    }
+
+    .object2:hover::after {
+        content: attr(data-title);
+        position: absolute;
+        left: 20%;
+        top: 40%;
+        z-index: 1;
+        background: rgba(255, 170, 24, 0.6);
+        font-family: Arial, sans-serif;
+        font-size: 11px;
+        padding: 5px 10px;
+        border: 1px solid rgba(0, 0, 0, 0);
+        border-radius: 20px;
+    }
+}
+
 
 .object2:hover {
     transform: scale(1.2);
@@ -706,7 +765,6 @@ ul li {
     display: block;
     font-size: 20px;
     text-align: center;
-    max-width: 240px;
     color: white;
     font-family: 'Open Sans', sans-serif;
     margin-top: 50px;
@@ -717,21 +775,32 @@ ul li {
     display: block;
     font-size: 22px;
     text-align: center;
-    max-width: 240px;
     color: white;
     font-family: 'Open Sans', sans-serif;
     margin-top: 50px;
     letter-spacing: -1px;
 }
 
-@media(max-width:1200px){
-    .object4{
+@media(max-width:1200px) {
+    .object4 {
         font-size: 16px;
     }
-    .object5{
+
+    .object5 {
         font-size: 16px;
     }
 }
+
+@media(max-width:1200px) {
+    .object4 {
+        margin-top: 10px;
+    }
+
+    .object5 {
+        margin-top: 10px;
+    }
+}
+
 
 .object4 img {
     margin-bottom: 30px;
@@ -739,6 +808,24 @@ ul li {
 
 .object5 img {
     margin-bottom: 30px;
+}
+
+@media(max-width:530px) {
+    .object4 {
+        font-size: 12px;
+    }
+
+    .object5 {
+        font-size: 12px;
+    }
+}
+
+.object4 img {
+    margin-bottom: 15px;
+}
+
+.object5 img {
+    margin-bottom: 15px;
 }
 
 .message {
@@ -752,6 +839,12 @@ ul li {
     font-family: 'Open Sans', sans-serif;
     font-size: 22px;
     text-align: center;
+}
+
+@media(max-width:992px){
+    .message{
+        margin-top: 0px;
+    }
 }
 
 #name {
@@ -776,6 +869,18 @@ ul li {
     font-size: 18px;
     font-family: 'Open Sans', sans-serif;
     background-color: rgba(255, 255, 255, 0.7);
+}
+
+@media(max-width:992px){
+    #name{
+        margin-top: 5px;
+        margin-bottom: 7px;
+    }
+
+    #name2{
+        margin-top: 5px;
+        margin-bottom: 7px;
+    }
 }
 
 .message textarea {
@@ -813,7 +918,7 @@ footer {
     font-size: 18px;
     color: white;
     font-family: 'Open Sans', sans-serif;
-    padding-top: 20px;
+    padding-top: 10px;
 }
 
 .preloader {
@@ -857,5 +962,5 @@ footer {
 }
 
 #map {
-    width: 99.99%;
+    width: 100%;
 }
