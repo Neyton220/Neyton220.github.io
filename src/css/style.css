@@ -220,7 +220,7 @@ ul li {
     font-family: 'Open Sans', sans-serif;
     color: #6f707e;
     height: 50px;
-    transition: all 0.5s;
+    transition: all 0.3s;
     transform: scale(1);
     align-items: center;
     padding-left: 15px;
@@ -234,7 +234,7 @@ ul li {
 
 .AboutMe button:hover {
     transform: scale(1.1);
-    filter: drop-shadow(0 0 10px #000000) drop-shadow(0 0 40px #000000);
+    filter: drop-shadow(0 0 20px #000000);
 }
 
 .AboutMe button img {
@@ -432,7 +432,7 @@ ul li {
     margin-bottom: 200px;
     border: 1px solid #63b5ae;
     border-radius: 7px;
-    background: #63b5ae;
+    background: linear-gradient(0deg, #63b5ae, #317d77, #63b5ae);
     height: 45px;
     width: 200px;
     color: white;
@@ -442,7 +442,7 @@ ul li {
 }
 
 .visit:hover {
-    background: #00675C;
+    background: linear-gradient(0deg, #317d77, #63b5ae, #317d77);
 }
 
 .visit:active {
@@ -529,7 +529,7 @@ ul li {
     margin-bottom: 40px;
     border: 1px solid #63b5ae;
     border-radius: 7px;
-    background: #63b5ae;
+    background: linear-gradient(0deg, #63b5ae, #317d77, #63b5ae);
     height: 45px;
     width: 200px;
     color: white;
@@ -539,7 +539,7 @@ ul li {
 }
 
 .cost button:hover {
-    background: #00675C;
+    background: linear-gradient(0deg, #317d77, #63b5ae, #317d77);
 }
 
 .cost button:active {
@@ -929,7 +929,6 @@ footer {
     justify-content: center;
     align-items: center;
     background: rgb(50, 50, 50);
-    ;
     z-index: 1001;
 }
 
